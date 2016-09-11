@@ -1,0 +1,16 @@
+role_pkgs:
+- libssl-dev
+- libicu-dev
+- libffi-dev 
+- libgdbm-dev
+- libgdbm3 
+- libreadline6-dev
+- libncurses5-dev 
+- libyaml-dev
+- zlib1g-dev 
+
+rbenv_plugins:
+- name: ruby-build
+  repo: https://github.com/sstephenson/ruby-build.git
+- name: rbenv-gem-rehash
+  repo: https://github.com/sstephenson/rbenv-gem-rehash.git

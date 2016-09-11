@@ -1,0 +1,16 @@
+---
+# This Playbook Configures The Development Box
+
+
+- hosts: all
+  become: yes
+  roles:
+  - sane_environment # Installs basic prerequisite packages (build-essential..)
+  - swapfile
+  - environment_modules
+
+- hosts: all
+  roles: 
+  - pyenv
+  - rbenv
+  - development_setup
